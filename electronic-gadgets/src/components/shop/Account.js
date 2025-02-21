@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import aimg from "../Images/IphoneSiv.jpg"
-import aimg2 from "../Images/SamsumgW.jpg"
-import user from "../Images/Sophia Lee.jpg"
-import { PencilIcon, Save } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import aimg from "../Images/IphoneSiv.jpg";
+import aimg2 from "../Images/SamsumgW.jpg";
+import user from "../Images/Sophia Lee.jpg";
+import { PencilIcon, Save } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Account = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -89,10 +89,11 @@ const Account = () => {
   };
   
 
-  // Handle form submit to update the address.............................
+  // Handle form submit to update the address...........
+
   const handleSubmiting = (e) => {
     e.preventDefault();
-    // Here, you would normally update the address in your database or backend
+    // Here, you would normally update the address in your database / backend
     setIsMyediting(false);
     console.log('Address has been updated!');
   };
