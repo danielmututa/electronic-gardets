@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" hidden lg:flex fixed w-full z-10 justify-between items-center bg-navbar  shadow-md py-[18px] px-[100px] ">
+    <div className=" hidden lg:flex fixed w-full z-50 justify-between items-center bg-navbar  shadow-md py-[18px] px-[100px] ">
       <p className="text-white text-xl">Dimbo P</p>
       <div className="flex justify-between gap-9" ref={dropdownRef}>
 
