@@ -1,4 +1,4 @@
-import {  LocateIcon, Octagon, Phone, PhoneIcon } from 'lucide-react'
+import {   Phone  } from 'lucide-react'
 import React from 'react'
 import {HiLocationMarker} from "react-icons/hi"
 import { FaRegEnvelopeOpen} from 'react-icons/fa6';
@@ -10,23 +10,23 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
      
-    const links = [
-        {type:"Navigation", des1:"Home", des2:"Pages" , des3:"Shop" , des4:"Blogs"},
-        {type:"Quick Link", des1:"Contact Us", des2:"FAQS" , des3:"Bookings" , des4:"Pages"},
-        {type:"Services", des1:"Home", des2:"Contact" , des3:"Blog" , des4:"404"},
-    ]
+    // const links = [
+    //     {type:"Navigation", des1:"Home", des2:"Pages" , des3:"Shop" , des4:"Blogs"},
+    //     {type:"Quick Link", des1:"Contact Us", des2:"FAQS" , des3:"Bookings" , des4:"Pages"},
+    //     {type:"Services", des1:"Home", des2:"Contact" , des3:"Blog" , des4:"404"},
+    // ]
 
-    const blinks = [
-        {  icon:HiLocationMarker,type:"Lucky Street"},
-        {icon:Phone,type:"+263-774006306"},
-        {icon: FaRegEnvelopeOpen,type:"type@gmail.com"}
-    ]
+    // const blinks = [
+    //     {  icon:HiLocationMarker,type:"Lucky Street"},
+    //     {icon:Phone,type:"+263-774006306"},
+    //     {icon: FaRegEnvelopeOpen,type:"type@gmail.com"}
+    // ]
   
-    const icons = [
-        {icon: FiFacebook},
-        {icon:FaInstagram},
-        {icon:FaXTwitter}
-    ]
+    // const icons = [
+    //     {icon: FiFacebook},
+    //     {icon:FaInstagram},
+    //     {icon:FaXTwitter}
+    // ]
 
 
   return (
