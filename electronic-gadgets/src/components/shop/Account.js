@@ -530,7 +530,7 @@ const Account = () => {
                 <div key={index} className="flex pt-6 w-full justify-between">
                   <div className="flex gap-[13px] md:gap-[69px] md:items-center items-start">
                     <p className='font-montserrat text-[12px] md:text-sm pt-[30px] md:pt-0'>{item.date}</p>
-                    <div className="flex items-start md:items-center gap-3 flex-col md:flex-row">
+                    <div className="flex items-start md:items-center gap-3 flex-col md:flex-row lg:flex-col xl:flex-row">
                       <img src={require("../Images/" + item.img)} className='w-[100px] h-20 object-cover' alt="" />
                       <div>
                         <p className='font-montserrat text-sm '>{item.delivered}</p>
@@ -553,7 +553,7 @@ const Account = () => {
 
         {/* Account Panel */}
         <div className={`
-          absolute  top-10 lg:top-0 left-0 w-[280px] sm:w-[320px] h-full bg-body
+          absolute  top-10 lg:top-0 left-0 w-[280px]  sm:w-[320px] lg:h-full bg-body
           transform transition-transform duration-300 ease-in-out z-40
           lg:relative lg:w-[34%] lg:transform-none
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
@@ -566,7 +566,7 @@ const Account = () => {
             <X className="w-6 h-6" />
           </button>
 
-          <div className="flex flex-col items-center justify-center h-full pb-20">
+          <div className="flex flex-col items-center justify-start lg:justify-center h-full pb-20">
             <div className="flex flex-col pt-8 items-center justify-center">
               <img src={user} className='h-[80px] w-[80px] object-cover rounded-full mb-3' alt="" />
               <p className='text-sm md:text-[16px] lg:text-[18px] text-white font-montserratBold'>Natasha Parker</p>

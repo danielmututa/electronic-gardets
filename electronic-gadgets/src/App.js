@@ -15,6 +15,8 @@ import Login from './components/pages/Login';
 import Shop from './components/shop/Shop';
 import Categories from './components/shop/Categories';
 import Account from './components/shop/Account';
+import Blog from './components/blogs/Blog';
+import Blogarticle from './components/blogs/Blogarticle';
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <Route path='shop' element={< Shop/>}/>
         <Route path='categories' element={< Categories/>}/>
         <Route path='account' element={< Account/>}/>
+        <Route path='blog' element={< Blog/>}/>
+        <Route path='blogarticle' element={< Blogarticle/>}/>
        </Routes>
        <Footer/>
     </div>

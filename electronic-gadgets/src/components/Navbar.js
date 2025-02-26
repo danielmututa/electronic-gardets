@@ -28,16 +28,16 @@ const Navbar = () => {
 
   return (
     <div className=" hidden lg:flex fixed w-full z-50 justify-between items-center bg-navbar  shadow-md py-[18px] px-[100px] ">
-      <p className="text-white text-xl">Dimbo P</p>
+      <p className="text-white font-montserratBold text-xl">Dimbo P</p>
       <div className="flex justify-between gap-9" ref={dropdownRef}>
 
-        <NavLink to="/"  className="text-white hover:font-bold">Home</NavLink>
+        <NavLink to="/"  className="text-white font-montserrat hover:font-montserratBold">Home</NavLink>
 
         <div 
           className="relative"
           onMouseEnter={() => setOpenMenu('pages')}
         >
-          <button className="flex gap-1 items-center text-white hover:font-bold">
+          <button className="flex gap-1 items-center font-montserrat text-white hover:font-montserratBold">
             Pages
             <ChevronDown size={14} className={`text-white transition-transform duration-300 ${openMenu === 'pages' ? 'rotate-180' : ''}`} />
           </button>
@@ -51,37 +51,37 @@ const Navbar = () => {
 
        <div className="w-full flex flex-col">
               <Link to="/about"
-                className="px-4 py-4  hover:bg-buttons cursor-pointer"
+                className="px-4 py-4  hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >About us</Link>
 
               <Link to="/team"
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >About Team</Link>
 
               <Link to="/services" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Services</Link>
 
               <Link to="/contact" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Contact us</Link>
 
               <Link to="/faq" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >FAQ</Link>
 
               <Link to="/whilelist" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Wishlist</Link>
 
               <Link to="/login" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Login</Link>
            
@@ -98,7 +98,7 @@ const Navbar = () => {
           className="relative"
           onMouseEnter={() => setOpenMenu('shop')}
         >
-          <button className="flex gap-1 items-center text-white hover:font-bold">
+          <button className="flex gap-1 items-center font-montserrat text-white hover:font-montserratBold">
             Shop
             <ChevronDown size={14} className={`text-white transition-transform duration-300 ${openMenu === 'shop' ? 'rotate-180' : ''}`} />
           </button>
@@ -110,7 +110,7 @@ const Navbar = () => {
               <div className="w-full flex flex-col">
        
        <Link to="/shop" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Product Listings</Link>
 
@@ -118,14 +118,14 @@ const Navbar = () => {
              
 
             <Link to="/categories" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Categories</Link>
 
 
              
   <Link to="/account" 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                className="px-4 py-4 hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
               >Account</Link>
 
@@ -134,11 +134,13 @@ const Navbar = () => {
           </div>
         </div>
 
+        
+
         <div 
           className="relative"
           onMouseEnter={() => setOpenMenu('blogs')}
         >
-          <button className="flex gap-1 items-center text-white hover:font-bold">
+          <button className="flex gap-1 items-center text-white font-montserrat hover:font-montserratBold">
             Blogs
             <ChevronDown size={14} className={`text-white transition-transform duration-300 ${openMenu === 'blogs' ? 'rotate-180' : ''}`} />
           </button>
@@ -147,16 +149,19 @@ const Navbar = () => {
               openMenu === 'blogs' ? 'opacity-100 transform scale-y-100' : 'opacity-0 transform scale-y-0'
             }`}
           >
-            <ul>
-              <li 
-                className="px-4 py-4 hover:hover:bg-buttons cursor-pointer"
+
+<div className="w-full flex flex-col">
+           
+              <Link to="/blog"
+                className="px-4 py-4 hover:hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Blog</li>
-              <li 
-                className="px-4 py-4 hover:hover:bg-buttons cursor-pointer"
+              >Blog</Link>
+              <Link to='/blogarticle'
+                className="px-4 py-4 hover:hover:bg-buttons font-montserrat cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Blog Article</li>
-            </ul>
+              >Blog Article</Link>
+          
+            </div>
           </div>
         </div>
       </div>
